@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rekod Enquiry | GengBatik</title>
+    <link rel="stylesheet" href="styles.css?v=3" />
+  </head>
+  <body class="records-page">
+    <main class="records-shell">
+      <section class="records-header">
+        <div>
+          <p class="eyebrow">Rekod dalaman</p>
+          <h1>Enquiry GengBatik</h1>
+          <p>Masukkan kata laluan admin untuk lihat senarai enquiry yang masuk melalui website.</p>
+        </div>
+        <a class="button secondary records-home" href="index.html">Kembali ke website</a>
+      </section>
+
+      <form class="records-login">
+        <label>
+          Kata laluan admin
+          <input type="password" name="password" placeholder="Masukkan kata laluan" required />
+        </label>
+        <button class="button primary" type="submit">Lihat rekod</button>
+        <p class="form-note" role="status"></p>
+      </form>
+
+      <section class="records-table-wrap" hidden>
+        <div class="records-toolbar">
+          <h2>Senarai enquiry</h2>
+          <button class="button contact-whatsapp" type="button" id="refresh-records">Refresh</button>
+        </div>
+        <div class="records-table-scroll">
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>Tarikh</th>
+                <th>Nama</th>
+                <th>WhatsApp</th>
+                <th>Jenis</th>
+                <th>Maklumat</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="records.js"></script>
+  </body>
+</html>
